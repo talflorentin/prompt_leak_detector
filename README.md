@@ -8,7 +8,7 @@ To run this project, you'll need to install the required packages. You can do th
 Make sure you have the necessary dependencies installed.
 
 ## Configuration
-Secret keys should be inserted into the `secret_key.py` file. These keys may be required for certain functionalities within the program.
+API keys `openai_key` and `pinecone_key` should be inserted into the `~/.streamlit/secrets.toml` file. These keys may be required for certain functionalities within the program.
 
 ## Usage
 To use the program, follow these steps:
