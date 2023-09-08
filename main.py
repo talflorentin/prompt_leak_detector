@@ -1,6 +1,5 @@
-import streamlit as st
 import openai
-import secret_key
+import streamlit as st
 import utils
 import numpy as np
 from PIL import Image
@@ -8,8 +7,7 @@ from PIL import Image
 image = Image.open('data_leak_img.png')
 st.image(image)
 
-openai.api_key = secret_key.openai_key
-
+openai.api_key = st.secrets["openai_key"]
 st.title("Prompt Leak Detector")
 
 # Sidebar for user input
